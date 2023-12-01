@@ -13,7 +13,7 @@ const addEventOnElem = function (elem, type, callback) {
 } else {
     elem.addEventListener(type, callback);
     }
-};
+}
 
 
 
@@ -21,12 +21,16 @@ const addEventOnElem = function (elem, type, callback) {
  * navbar toggle
  */
 
-const navbar = document.querySelector('[data-navbar]');
-const navTogglers = document.querySelectorAll("[data-navbar-toggle]");
+const navbar = document.querySelector("[data-navbar]");
+const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 
-const navLinks = document.querySelectorAll("[data-nav-links]");
+const navLinks = document.querySelectorAll("[data-nav-link]");
 
 const toggleNavbar = function () { navbar.classList.toggle("active"); }
 
 addEventOnElem(navTogglers, "click", toggleNavbar);
+
+const closeNavbar = function () { navbar.classList.remove("active"); }
+
+addEventOnElem(navLinks, "click", closeNavbar);
 
