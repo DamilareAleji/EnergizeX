@@ -819,6 +819,30 @@ body {
   #FOOTER
 \*-----------------------------------*/
 
+.footer { font-size: var(--fs-6); }
+
+.footer-top .container {
+  display: grid;
+  gap: 50px;
+}
+
+.footer-brand-text { margin-block: 25px; }
+
+.footer-top .wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-brand-list li:not(:last-child) { margin-block-end: 15px;}
+
+.footer-brand-title {
+  color: var(--white);
+  font-family: var(--ff-catamaran);
+}
+
+
 
 
 
